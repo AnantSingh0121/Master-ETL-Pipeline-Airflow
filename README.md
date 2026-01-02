@@ -63,7 +63,7 @@ The pipeline automatically manages the following tables in PostgreSQL:
 * **Tags**: `master`, `etl`
 ---
 
-## 📝 Usage
+## Usage
 
 1. Copy the DAG script into your Airflow `dags/` folder.
 2. Ensure the `apache-airflow-providers-http` and `apache-airflow-providers-postgres` packages are installed.
