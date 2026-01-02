@@ -4,7 +4,7 @@ A robust Data Engineering pipeline built with Apache Airflow that orchestrates t
 
 
 
-## 🚀 Features
+## Features
 
 * **Multi-Source Integration**: Synchronizes data from Marketstack, Aviationstack and Open-Meteo.
 * **Taskflow API**: Utilizes Airflow's modern `@task` decorators for clean, Pythonic DAG definitions.
@@ -14,7 +14,7 @@ A robust Data Engineering pipeline built with Apache Airflow that orchestrates t
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 The DAG follows a classic **Extract-Transform-Load-Quality (ETLQ)** pattern for each data domain:
 
@@ -25,7 +25,7 @@ The DAG follows a classic **Extract-Transform-Load-Quality (ETLQ)** pattern for 
 
 ---
 
-## 🛠️ Setup & Configuration
+## Setup & Configuration
 
 ### 1. Airflow Connections
 You must configure the following connections in the Airflow UI (**Admin -> Connections**):
@@ -45,7 +45,7 @@ To keep API keys secure, set the following variables in your environment or `.en
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 The pipeline automatically manages the following tables in PostgreSQL:
 
@@ -55,13 +55,12 @@ The pipeline automatically manages the following tables in PostgreSQL:
 
 ---
 
-## ⚙️ DAG Details
+## DAG Details
 
 * **Schedule**: `@daily`
 * **Catchup**: `False`
 * **Retries**: 2 (with a 5-minute delay)
 * **Tags**: `master`, `etl`
-
 ---
 
 ## 📝 Usage
